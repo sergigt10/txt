@@ -1,0 +1,194 @@
+Abstracció
+----------
+Buscarem transformar un objecte de la vida real en atributs (característiques) i les seves accions (métodes). 
+Consisteix en trobar les parts fonamentals d'un sistema per descriure-se de manera simple i precisa.
+
+
+Encapsulament
+--------------
+Recorda que les classes són com una caixa tancada, tots els métodes i les variables estan dins i tota la informació només pot ser accedida per mitjà dels seus sistemes propis, això fa que sigui de veritat com una caixa tancada, la seva informació només entra i surt com la classe vol. 
+
+Tenim 3 tipus:
+- Public: Poden accedir a tots els atributs o mètodes de la classe.
+- Protected: Poden accedir als atributs o métodes només si pertanyen a la mateixa jerarquía de l'herència.
+- Privat: Només es pot accedir als atributs o métodes de la classe a la que es troben.
+
+S'utilitza setter i getters
+
+public class Principal{
+    public String atributo1;
+    private String atributo2;
+    protected String atributo3;
+ 
+    /**Métodos Set y Get para trabajar con las variables*/
+    public String getAtributo2() {
+        return atributo2;
+    }
+ 
+    public void setAtributo2(String atributo2) {
+        this.atributo2 = atributo2;
+    } 
+}
+
+
+Polimorfisme
+------------
+Un sól nom d'una classe o mètode pot representar diferents implementacions. 
+Igual que un Ferrari i un Porsche. Sabem que els 2 cotxes tenen motors diferents i mecanismes diferents, però sabem que tots dos són cotxes i es condueixen. Això és polimorfisme, utilitzant diferents implementacions però només una interfície.
+
+Mitjançant el polimorfisme programem de forma general en lloc de fer-ho de forma específica, s'usa quan es treballin amb l'herència i objectes de característiques comuns dels quals comparteixen la mateixa superclasse i arbre jeràrquic, en treballar amb aquest concepte optimitzem i simplifiquem en gran mesura el nostre treball.
+
+
+class FiguraGeometrica{
+  
+}
+ 
+class Cuadrado extends FiguraGeometrica {
+  
+}
+ 
+class Triangulo extends FiguraGeometrica {
+  
+}
+ 
+class Circulo extends FiguraGeometrica{
+  
+}
+ 
+public class Principal{
+  
+    public void metodo(){
+        /**Puedo crear objetos concretos*/
+        FiguraGeometrica miFiguraGeometrica = new FiguraGeometrica();
+        Cuadrado miCuadro=new Cuadrado();
+
+        /**Puedo crear objetos polimorficos*/
+
+        /**Objeto Cuadrado de tipo FiguraGeometrica*/
+        FiguraGeometrica miCuadrado= new Cuadrado();
+        /**Objeto Circulo de tipo FiguraGeometrica*/
+        FiguraGeometrica miCirculo=new Circulo();
+        /**Objeto Triangulo de tipo FiguraGeometrica*/
+        FiguraGeometrica miTriangulo=new Triangulo();
+    }
+}
+
+
+Modularitat
+-----------
+S'anomena "modularitat" a la propietat que permet subdividir una aplicació en parts més petites (anomenades móduls), cadascuna de les quals ha de ser tan independent com sigui possible de l'aplicació 
+en si i de les altres parts. Aquests móduls es poden compilar per separat, però tenen connexions amb altres móduls.
+
+
+Classes abstractes
+------------------
+Una classe abstracta és una classe on el propósit és servir de superclasse per altres classes
+
+    - Ja sigui per a la generalització (polimorfisme)
+    - O per a la reutilització de codi, p.e. extensió (heréncia)
+
+Per exemple es crea un classe abstracta anomenada Animal amb el mètode menjar perqué les seves subclases puguin heredar aquest métode menjar i puguin implementar-l'ho a la seva manera.
+
+Les classes abstractes permeten crear mètodes generals amb un comportament comú per a altres classes concretes sense importar les seves característiques ni el comportament que facin servir per a aquests mètodes.
+
+L'Abstracció en java només té lògica mitjançant l'herència, ja que una classe abstracta posseeix almenys un mètode abstracte el qual no té implementació, el comportament d'aquests mètodes el defineixen les classes concretes que ho heretin.
+
+Podem usar-los quan hi hagi diverses classes amb característiques o accions comunes però amb diferents comportaments mitjançant l'ús de l'herència i components abstractes fem mes òptima i organitzada la nostra aplicació. Les classes abstractes no es poden instanciar.
+
+public abstract class Principal{
+ 
+    /**Método Abstracto sin implementación*/
+    public abstract void metodoAbstracto();
+   
+}
+ 
+public class subClase extends Principal{
+ 
+    @Override
+    public void metodoAbstracto() {
+        /**Implementación definida por la clase concreta*/
+    }
+}
+
+
+Interfícies
+-----------
+Java només pot heredar d'una classe per solucionar això utilitzem interfícies per permetre l'herència múltiple. Una interfície en Java és un conjunt de declaracions de mètodes, sense implementació.
+
+Quan s'utilitza una interfície a una classe tindrem que definir el seu métode si o si.
+
+Interfície ordenable:
+
+public interface Ordenable {
+    void ordeñar();
+}
+
+Classe vaca amb el métode ordeñar de la interfície implementada:
+
+public class Vaca extends Animal implements Ordenable {
+    public Vaca(String nombre) {
+        super(nombre);
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("La vaca comerá: " + getPeso() * 8 + " kg de pienso.");
+    }
+
+    @Override
+    public void ordeñar() {
+        System.out.println("Estoy ordenando la vaca: " + getNombre());
+    }
+}
+
+https://informaticapc.com/poo/interfaces.php
+
+Diferència entre classe abstracta i interfície:
+-----------------------------------------------
+
+https://es.stackoverflow.com/questions/107742/cu%C3%A1l-es-la-diferencia-entre-interfaz-y-clase-abstracta-en-java
+
+http://www.diferenciaentre.net/diferencia-entre-clase-abstracta-e-interfaz-en-java/
+
+Tanto la clase abstracta como la interfaz definen un tipo, pero mientras que el objetivo al definir una clase abstracta es reutilizar comportamiento, en la interfaz la idea principal es posibilitar el polimorfismo entre clases que no tienen cosas en común. No es posible definir comportamiento ni atributos para una interfaz.
+
+Recordemos que en la mayoría de las tecnologías se trabaja únicamente con herencia simple (solamente es posible heredar de una única superclase), mientras que una clase puede tener múltiples tipos (implementar diferentes interfaces). Entonces en esos casos donde la herencia es una herramienta rígida, que permite una sola chance para ordenar la jerarquía de objetos, la interfaz puede resultar una alternativa viable.
+
+
+Herència
+--------
+En java obtenim les característiques comunes dels nostres pares: atributs i mètodes:
+
+Classe pare:
+
+public class Animal{
+    public String tamaño;
+
+    public void comer(){
+        /**Comportamiento.....*/
+    }
+}
+
+Classes filles:
+
+public class Perro extends Animal{
+    public int dientes;
+
+    public void correr(){
+        /**Comportamiento.....*/
+    }
+}
+ 
+public class Paloma extends Animal{
+    public int plumas;
+
+    public void volar(){
+        /**Comportamiento.....*/
+    }
+}
+
+
+--------------------------------------------------------------------------------------
+
+
+http://codejavu.blogspot.com/2013/05/conceptos-de-programacion-orientada.html

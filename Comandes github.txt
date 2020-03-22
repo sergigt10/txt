@@ -1,0 +1,37 @@
+
+Pasos github
+------------
+
+- Inicialitzar repositori:
+	git init
+- Veure estat del repositori:
+	git status
+- Afegim els fitxers que volem pujar:
+	git add .
+- Fem un commit:
+	git commit -m "primer commit"
+- Enllaçar repositori amb el contingut local:
+	git remote add origin https://github.....
+- /* Canviar de repositori */
+	git remote rm origin
+- Pujar canvis dels fitxers en el repositori:
+	git push -u origin master
+
+- Descarregar tot el contingut del github:
+	git clone https://github.....
+
+- Descarregar canvis del repositori:
+	git pull
+
+- Agafar el contingut d'un altre repositori i afegir-l'ho 
+al nostre repositori:
+	fork
+
+/** Treballar amb branques **/
+
+- Actualitzar repositori perquè sàpiga que té noves branques
+	git fetch
+- Accedir a una nova branca del repositori
+	git checkout nom_de_la_branca
+- Pujar a la nova branca
+	git push -u origin nom_de_la_branca
