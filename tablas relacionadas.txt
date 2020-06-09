@@ -1,0 +1,5 @@
+https://www.youtube.com/channel/UC1WxZFhq56xs1oxXH-XveSQ/videos
+https://www.youtube.com/watch?v=K6w0bZjl_Lw
+https://www.admfactory.com/how-to-define-one-to-one-relationship-in-mysql/
+
+https://hackernoon.com/mysql-tutorial-example-relation-foreign-key-database-funtion-join-table-query-one-namy-nest-41dd09648fbd
