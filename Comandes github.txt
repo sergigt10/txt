@@ -10,7 +10,7 @@ Pasos github
 	git add .
 - Fem un commit:
 	git commit -m "primer commit"
-- EnllaÁar repositori amb el contingut local:
+- Enlla√ßar repositori amb el contingut local:
 	git remote add origin https://github.....
 - /* Canviar de repositori */
 	git remote rm origin
@@ -27,9 +27,16 @@ Pasos github
 al nostre repositori:
 	fork
 
+/** Afegir contingut a una branca utilitzada **/
+
+- Descarregar tot el contingut
+git pull --rebase origin master
+
+- Despr√©s fer els pasos de sempre git add . , git commit...
+
 /** Treballar amb branques **/
 
-- Actualitzar repositori perquË s‡piga que tÈ noves branques
+- Actualitzar repositori perqu√® s√†piga que t√© noves branques
 	git fetch
 - Accedir a una nova branca del repositori
 	git checkout nom_de_la_branca
