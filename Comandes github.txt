@@ -1,3 +1,8 @@
+Primer cop que s'instala git
+----------------------------
+git config --global user.name "_NomUsuariGithub_"
+
+git config --global user.email "_CorreuElectronic_"
 
 Pasos github
 ------------
