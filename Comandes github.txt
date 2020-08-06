@@ -39,6 +39,10 @@ git pull --rebase origin master
 
 - Després fer els pasos de sempre git add . , git commit...
 
+/** Recordatori de la branca que utilitzem (URL) **/
+
+git remote -v
+
 /** Treballar amb branques **/
 
 - Actualitzar repositori perquè sàpiga que té noves branques
