@@ -31,6 +31,13 @@ Pasos github
 - Agafar el contingut d'un altre repositori i afegir-l'ho 
 al nostre repositori:
 	fork
+	
+/** Si no permet pujar alguna carpeta/arxiu **/
+
+git rm -rf --cached myuntrackedfolder
+
+git add myuntrackedfolder 
+
 
 /** Afegir contingut a una branca utilitzada **/
 
