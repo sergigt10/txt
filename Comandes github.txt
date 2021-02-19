@@ -47,6 +47,8 @@ Branques
 	git fetch
 - Accedir a una nova branca del repositori
 	git checkout nom_de_la_branca
+- Crear una nueva rama
+	git checkout -b nom_de_la_branca
 - Veure a quina branca estem
 	git branch
 - Pujar a la nova branca
