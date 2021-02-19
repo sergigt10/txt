@@ -4,8 +4,9 @@ git config --global user.name "_NomUsuariGithub_"
 
 git config --global user.email "_CorreuElectronic_"
 
-Pasos github
-------------
+
+Pasos bàsics github
+-------------------
 
 - Inicialitzar repositori:
 	git init
@@ -32,25 +33,15 @@ Pasos github
 al nostre repositori:
 	fork
 	
-/** Si no permet pujar alguna carpeta/arxiu **/
+- Si no permet pujar alguna carpeta/arxiu
 
-git rm -rf --cached myuntrackedfolder
+	git rm -rf --cached myuntrackedfolder
 
-git add myuntrackedfolder 
+	git add myuntrackedfolder 
 
 
-/** Afegir contingut a una branca utilitzada **/
-
-- Descarregar tot el contingut
-git pull --rebase origin master
-
-- Després fer els pasos de sempre git add . , git commit...
-
-/** Recordatori de la branca que utilitzem (URL) **/
-
-git remote -v
-
-/** Treballar amb branques **/
+Branques
+--------
 
 - Actualitzar repositori perquè sàpiga que té noves branques
 	git fetch
@@ -60,3 +51,18 @@ git remote -v
 	git branch
 - Pujar a la nova branca
 	git push -u origin nom_de_la_branca
+
+
+/** Afegir contingut a una branca utilitzada **/
+
+- Descarregar tot el contingut
+	git pull --rebase origin master
+
+- Després fer els pasos de sempre git add . , git commit...
+
+
+/** Recordatori de la branca que utilitzem (URL) **/
+
+	git remote -v
+
+
