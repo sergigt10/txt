@@ -56,5 +56,7 @@ git remote -v
 	git fetch
 - Accedir a una nova branca del repositori
 	git checkout nom_de_la_branca
+- Veure a quina branca estem
+	git branch
 - Pujar a la nova branca
 	git push -u origin nom_de_la_branca
