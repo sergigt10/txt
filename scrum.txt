@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=PlLHc60egiQ
+
+https://www.youtube.com/watch?v=qRx8BkjY8lY
+
+https://luis-goncalves.com/es/que-es-la-metodologia-scrum/
+
+
+** Agile **
+# Los métodos Agile más populares del momento son Scrum y Kanban.
+
+https://www.progressalean.com/metodologia-agile/
+
+
+** Scrum **
+https://www.youtube.com/watch?v=HhC75IonpOU
+# Es un marco de trabajo para el desarrollo y mantenimiento de productos complejos o sencillos.
+# Tres roles principales: Product Owner (Dueño del producto), Scrum Master y el equipo de desarrollo.
+# Producto owner: Es la representación del cliente dentro del equipo de trabajo, su princiapl responsabilidad es expresar claramente la necesidad del cliente dentro del Product Backlog.
+# El Scrum Master es el responsable de asegurar que el Scrum es realizado correctamente. El scrum Master también puede formar parte del Development Team.
+# Development Team: Equipo de desarrollo responsable de dar cumplimiento a los SPRINT, son un equipo autogestionado y organizado.
+# Product Backlog ("Artefacto"): Lista completa de las funcionalidades o necesidades que requiere el cliente. (Definidas por el Product Owner).
+# Sprint Planning Meeting: Se habla como llevar las necesidades del cliente. El Team selecciona las tareas que se trabajarán en el Sprint. Gracias a esto vamos a obtener una lista de funcionalidades llamada Sprint Backlog. 
+# Sprint Backlog: Son tomadas del Product Backlog. De aqui sale el Sprint donde se indica el tiempo de finalización de la tarea que puede ir de 1 semana a 4. El Sprint es el corazón del Scrum. El Sprint corresponde al proceso de desarrollo de las necesidades del cliente pero divididas en un módulo funcional. En cada sprint se espera entregar un producto funcional al cliente.
+# Daily Scrum (reuniones diarias): Permite hacer seguimientos diarios a todos los procesos que hay en el Sprint. Se reúnen el Scrum Master y el Developer Team y se hacen una serie de preguntas muy puntuales a cada miembro: Qué se hizo ayer?, Qué se está haciendo hoy?, Qué se va hacer mañana? y Qué problemas se encontro. Reunión corta máximo 15 min. Estas reuniones se realizan frente un tablero tipo TO-DO: Planeado, En proceso, Terminado.
+# Al finalizar el Sprint se hace una reunion llamada Sprint Review con todos los roles para verificar los objetivos finalizados del sprint en cuestión y así garantizar la entrega del producto.
+# Después de entregar el producto se hace otra reunión llamada Sprint Retrospective para valorar los resultados del Sprint anterior (problemas, mejores, ...) para aplicar al siguiente Sprint. Automaticamente vamos a iniciar un nuevo sprint tomando otras funcionalidades del Product Backlog para iniciar otra vez el proceso hasta tener otro producto funcio
+nal y el cliente poder ver el avance del proyecto. Al finalizar todos los Sprints se espera tener todo el producto terminado.
+
